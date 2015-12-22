@@ -32,8 +32,8 @@ void cleanup_bus_data(vector<BusObject> &bus_list);
 void create_coefficient_data(string route_id, bool stop_all, int stop_id, int iterations, int retrain_time);
 void create_coefficient_data(vector< vector<BusObject> > &bus_trips, StopObject &stop, TrainerBase *trainer);
 void create_train_data(vector< vector< double > > &train_data, vector< vector<BusObject> > &bus_trips, 
-							  StopObject &stop, set<string> &stop_dests, vector<int> &route_block_ids, RoutePerfObject &perf_obj,
-							  map<int, int> &perf_block_id_trips, map<int, int> &perf_block_id_discarded_trips);
+        StopObject &stop, set<string> &stop_dests, vector<int> &route_block_ids, RoutePerfObject &perf_obj,
+        map<int, int> &perf_block_id_trips, map<int, int> &perf_block_id_discarded_trips);
 bool double_compare(double a, double b);
 double distance(BusObject &bus, StopObject &stop);
 double distance(double lat1, double lon1, double lat2, double lon2, char unit = 0);

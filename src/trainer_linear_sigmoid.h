@@ -5,11 +5,11 @@
 
 class TrainerLinearSigmoid : public TrainerLinear
 {
-public:
-	TrainerLinearSigmoid() {}
-	~TrainerLinearSigmoid() {}
-	
-	void costFunc(double* theta, double* cost, double* gradVec);
+    public:
+        TrainerLinearSigmoid() {}
+        ~TrainerLinearSigmoid() {}
+
+        void costFunc(double* theta, double* cost, double* gradVec);
 };
 
 #endif

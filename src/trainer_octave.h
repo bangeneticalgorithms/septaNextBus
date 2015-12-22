@@ -5,13 +5,13 @@
 
 class TrainerOctave : public TrainerBase
 {
-public:
-	TrainerOctave() {}
-	~TrainerOctave() {}
-	
-	double trainData(vector< vector<double> > &train_data, vector<double> &theta_results, vector<double> &mu_results, vector<double> &sigma_results);
-	
-	vector<double> readResults(string filename);
+    public:
+        TrainerOctave() {}
+        ~TrainerOctave() {}
+
+        double trainData(vector< vector<double> > &train_data, vector<double> &theta_results, vector<double> &mu_results, vector<double> &sigma_results);
+
+        vector<double> readResults(string filename);
 };
 
 #endif
